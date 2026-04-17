@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0d58fd7369a530f45a7ea096154e2c4f
+guid: c6807ae2647c86f4c89e7acde56546b7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3551287784963028691
-    second: Bird_0
+      213: 6043869852406729703
+    second: Title neko_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bird_0
+      name: Title neko_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 8
-        width: 12
-        height: 12
+        x: 0
+        y: 0
+        width: 2388
+        height: 1668
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d29481a339a47bec0800000000000000
-      internalID: -3551287784963028691
+      spriteID: 7eb4565eb9320e350800000000000000
+      internalID: 6043869852406729703
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Bird_0: -3551287784963028691
+      Title neko_0: 6043869852406729703
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
