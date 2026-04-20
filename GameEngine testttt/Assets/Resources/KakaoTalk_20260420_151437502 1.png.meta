@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e9b8877220a727b408a6b80ac18c7cd4
+guid: 7bc64ed292a1faa4480d95fb762763c5
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -103,35 +103,17 @@ TextureImporter:
       name: KakaoTalk_20260420_151437502_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 12
-        width: 961
-        height: 1014
+        x: 24
+        y: 11
+        width: 937
+        height: 964
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
-      outline:
-      - - {x: 186.5, y: -434}
-        - {x: 215.5, y: -364}
-        - {x: 217.5, y: -345}
-        - {x: 216.5, y: -361}
-        - {x: 211.5, y: -384}
-        - {x: 205.5, y: -395}
-        - {x: 204.5, y: -400}
-        - {x: 213.5, y: -419}
-        - {x: 292.5, y: -364}
-        - {x: 292.5, y: -170}
-        - {x: 243.5, y: 44}
-        - {x: 244.5, y: 282}
-        - {x: 165.5, y: 355}
-        - {x: 35.5, y: 301}
-        - {x: -127.5, y: 224}
-        - {x: -292.5, y: -390}
-        - {x: -200.5, y: -436}
-        - {x: 185.5, y: -436}
+      outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
       spriteID: 9ee4952c11f51e6e0800000000000000
       internalID: -1810061045346513175
@@ -143,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 68c3a7be3ce8cc9419b8df1aa62a2adb
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
