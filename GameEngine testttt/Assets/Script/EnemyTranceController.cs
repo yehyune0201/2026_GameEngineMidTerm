@@ -20,6 +20,22 @@ public class EnemyTranceController : MonoBehaviour
         {
             return;
         }
+        Vector2 directtionNormalized = direction.normalized;
+
+        RaycastHit2D[] hits = Physics2D.RaycastAll(transform.position, directtionNormalized,raycastDIstance);
+        Debug.DrawRay(transform.position, directtionNormalized * raycastDIstance, Color.red);
+        foreach (RaycastHit2D raycastHit in hits )
+        {
+            if(raycastHit.collider != null && raycastHit.collider.CompareTag("Obstacle"))
+            {
+                Vector3 alternativeDirection = Quaternion.Euler(0f, 0f, -90f) * direction;
+                transform.Translate(alternativeDirection * moveSpeed * Time.deltaTime);
+            }
+            else
+            {
+                transform.Translate(direction * moveSpeed * Time.deltaTime);
+            }
+        }
 
     }
 }
