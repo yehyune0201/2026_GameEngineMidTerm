@@ -14,6 +14,8 @@ public class PlayerController : MonoBehaviour
     private float moveInput;
     private Animator pAni;
 
+    private bool isGinant = false;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -32,7 +34,25 @@ public class PlayerController : MonoBehaviour
     {
         rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
 
-        if(moveInput < 0)
+        if (isGinant)
+        {
+            if(moveInput < 0)
+                transform.localScale = new Vector3(2, 2, 2);
+            else if (moveInput > 0)
+                transform.localScale = new Vector3(-2, 2, 2);
+        }
+        else
+        {
+             if (moveInput < 0)
+                transform.localScale = new Vector3(1, 1, 1);
+             else if (moveInput > 0)
+                transform.localScale = new Vector3(-1, 1, 1);
+        }
+
+
+
+
+        if (moveInput < 0)
         {
             transform.localScale = new Vector3(1, 1, 1);
         }
@@ -71,7 +91,21 @@ public class PlayerController : MonoBehaviour
 
         if(collision.CompareTag("Enemy"))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            if (isGinant)
+                Destroy(collision.gameObject);
+            else
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+
+        if (collision.CompareTag("Item"))
+        {
+            isGinant = true;
+            Invoke(nameof(ResetGiant), 4f);
+            Destroy(collision.gameObject);
+        }
+        void ResetGiant()
+        {
+
         }
     }
 }
