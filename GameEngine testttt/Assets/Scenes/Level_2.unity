@@ -89471,7 +89471,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2851458388993461390, guid: 9351e5579adea014c8c22dcaddd32c88, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1823168663}
   m_SourcePrefab: {fileID: 100100000, guid: 9351e5579adea014c8c22dcaddd32c88, type: 3}
 --- !u!1 &1332422710
 GameObject:
@@ -109513,6 +109516,24 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 49.59933, y: 1.3782635}
   m_EdgeRadius: 0
+--- !u!1 &1823168662 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2851458388993461390, guid: 9351e5579adea014c8c22dcaddd32c88, type: 3}
+  m_PrefabInstance: {fileID: 1266584445}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1823168663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1823168662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55992b944ced262439ab8e6188c31d7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationDuration: 0.3
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

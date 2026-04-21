@@ -1451,7 +1451,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.3388801, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -179, y: 241}
+  m_AnchoredPosition: {x: -200, y: 227}
   m_SizeDelta: {x: 41, y: 50}
   m_Pivot: {x: 0.49999997, y: 0.49999994}
 --- !u!114 &1361772054
@@ -1476,7 +1476,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "- \uC0C1\uD654\uC88C\uC6B0\uB97C \uBC29\uD5A5\uD0A4\uB85C \uC774\uB3D9\uD560
     \uC218 \uC788\uC2B5\uB2C8\uB2E4. \n\n- \uC2A4\uD398\uC774\uC2A4\uBC14\uB85C \uC810\uD504
-    \uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+    \uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4.\n\n- S\uD0A4\uB97C \uB204\uB974\uBA74
+    \uBA40\uBBF8 \uC720\uBC1C \uD68C\uC804\uC744 \uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4! "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 89989e97861acd2478a8629d9adbbded, type: 2}
   m_sharedMaterial: {fileID: 755568817597150477, guid: 89989e97861acd2478a8629d9adbbded, type: 2}
