@@ -1,21 +1,14 @@
 using UnityEngine;
 
-public class Exit : MonoBehaviour
+public class QuitGame : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    public void GameExit()
+    public void Quit()
     {
         Application.Quit();
-    }
 
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-       
+        // 에디터에서 실행 중일 때 종료
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#endif
     }
 }
