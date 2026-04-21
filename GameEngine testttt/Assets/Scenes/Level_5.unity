@@ -56703,7 +56703,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44f2f40b08d5e3741905336d1b3c4170, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevel: Title
+  nextLevel: Ending
 --- !u!1001 &1330008902930700679
 PrefabInstance:
   m_ObjectHideFlags: 0
