@@ -15,12 +15,15 @@ public class PlayerController : MonoBehaviour
     private float moveInput;
     private Animator pAni;
 
+    float score;
+
     private bool isGinant = false;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         pAni = GetComponent<Animator>();
+        score = 0f;
     }
     
 
@@ -84,6 +87,7 @@ public class PlayerController : MonoBehaviour
 
         if(collision.CompareTag("Finish"))
         {
+            HighScore.TrySet(SceneManager.GetActiveScene().buildIndex, (int)score);
             collision.GetComponent<LevelObject>().MoveToNextLevel();
         }
 
@@ -97,14 +101,16 @@ public class PlayerController : MonoBehaviour
 
         if (collision.CompareTag("Item"))
         {
+            score += 10f; // 아이템 먹으면 점수 10점 추가
             isGinant = true;
-            Invoke(nameof(ResetGiant), 4f);
+            Invoke(nameof(ResetGiant), 3f);
             Destroy(collision.gameObject);
+
         }
+    }
         void ResetGiant()
         {
 
         }
-    }
 }
 
