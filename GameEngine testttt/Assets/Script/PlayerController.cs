@@ -87,7 +87,8 @@ public class PlayerController : MonoBehaviour
 
         if(collision.CompareTag("Finish"))
         {
-            HighScore.TrySet(SceneManager.GetActiveScene().buildIndex, (int)score);
+            //HighScore.TrySet(SceneManager.GetActiveScene().buildIndex, (int)score);
+            StageResultSaver.SaveStage(SceneManager.GetActiveScene().buildIndex, (int)score);
             collision.GetComponent<LevelObject>().MoveToNextLevel();
         }
 
@@ -104,6 +105,7 @@ public class PlayerController : MonoBehaviour
             score += 10f; // 아이템 먹으면 점수 10점 추가
             isGinant = true;
             Invoke(nameof(ResetGiant), 3f);
+            score += collision.GetComponent<ItemObject>().GetPoint();
             Destroy(collision.gameObject);
 
         }
