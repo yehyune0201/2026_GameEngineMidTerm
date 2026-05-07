@@ -104,7 +104,7 @@ public class PlayerController : MonoBehaviour
         {
             score += 10f; // 아이템 먹으면 점수 10점 추가
             isGinant = true;
-            Invoke(nameof(ResetGiant), 3f);
+            //Invoke(nameof(ResetGiant), 3f);
             score += collision.GetComponent<ItemObject>().GetPoint();
             Destroy(collision.gameObject);
 

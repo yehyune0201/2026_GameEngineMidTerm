@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
 {
     public TMP_InputField inputField;
     public Button gameStartButton;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    
     void Start()
     {
         gameStartButton.onClick.AddListener(OnGameStartButtonClicked);
