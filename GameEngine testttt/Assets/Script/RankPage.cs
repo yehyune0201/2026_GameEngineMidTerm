@@ -19,7 +19,7 @@ public class RankPage : MonoBehaviour
         {
             Destroy(child.gameObject);
         }
-        var sortedData = allData.results.Where(r => r.stage == 2).OrderByDescending(x => x.score).ToList();
+        var sortedData = allData.results.Where(r => r.stage == 1).OrderByDescending(x => x.score).ToList();
 
          for (int i = 0; i < sortedData.Count; i++)
          {
